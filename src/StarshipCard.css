@@ -1,0 +1,46 @@
+/* StarshipCard.css - Styles for the Starship card component */
+
+.starship-card {
+    background-color: #4CAF50; /* Green background color */
+    color: white; /* White text color */
+    padding: 1rem; /* Spacing inside */
+    margin: 0.5rem; /* Spacing outside the card, between other cards */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    transition: transform 0.3s ease-in-out; /* Smooth transition for hover effect */
+    cursor: pointer; /* Indicates the card is clickable */
+    flex: 1; /* Flex item to take up equal space */
+    min-width: calc(33.333% - 1rem); /* Minimum width for three columns layout */
+    max-width: calc(33.333% - 1rem); /* aximum width for three columns layout */
+    box-sizing: border-box; /* Includes padding and border in the element's total width and height */
+    display: flex; /* Using flex to center content */
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    min-height: 200px; /* Minimum height for uniformity */
+    text-align: center; /* Ensures text is centered */
+    overflow: hidden; /* Hides any overflow */
+  }
+  
+  .starships-container {
+    display: flex; /* Using flexbox to layout cards */
+    flex-wrap: wrap; /* Allow cards to wrap to next line */
+    justify-content: center; /* Centers the cards within the container */
+    align-items: stretch; /* Stretch items to fill the container */
+    padding: 0; /* No padding */
+    margin: 0 auto; /* Centers the container */
+    background-color: white; /* White background for the container */
+    max-width: 1200px; /* Maximum width of the container */
+  }
+  
+  .starship-card:hover {
+    transform: scale(1.05); /* Slightly enlarges the card on hover */
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3); /* Increases shadow on hover */
+  }
+  
+  
+  .starship-card h2,
+  .starship-card p {
+    font-size: 0.9rem; /* Adjust font size as */
+  }
+  
